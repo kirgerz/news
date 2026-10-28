@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #edf1f5; color: #222; font: 16px/1.5 Arial, sans-serif; }
+a { color: #285b82; }
+.container { max-width: 1100px; margin: 20px auto; padding: 0 15px; }
+.site-header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 15px; background: #35485a; padding: 12px 18px; }
+.site-header nav, .account { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.site-header a, .account { color: white; }
+.site-header a { text-decoration: none; }
+.site-header a:hover { text-decoration: underline; }
+.account { font-size: 14px; }
+.logout-form { display: inline; }
+.logout-form button { padding: 3px 9px; margin: 0; }
+main { background: white; padding: 22px; min-height: 400px; border: 1px solid #d4dce3; border-top: 0; }
+h2 { margin-top: 0; font-size: 25px; }
+h3 { font-size: 20px; }
+.article-text { white-space: pre-line; overflow-wrap: anywhere; }
+.news-item { margin: 0 0 30px; }
+.news-item h3 { margin: 0 0 8px; color: #285b82; font-size: 20px; font-weight: normal; }
+.news-item .article-text { margin: 0 0 8px; }
+.news-meta { margin: 0; color: #777; font-size: 13px; }
+.news-meta a { color: inherit; }
+form { max-width: 600px; }
+label { display: block; margin-bottom: 5px; }
+input, select, textarea { width: 100%; padding: 7px; border: 1px solid #aab4bc; font: inherit; }
+textarea { resize: vertical; }
+small { color: #666; }
+.article-form { max-width: 820px; padding: 18px; background: #f2f5f7; border: 1px solid #dce3e8; }
+.editor-top { display: grid; grid-template-columns: minmax(0, 2fr) minmax(180px, 1fr); gap: 18px; }
+.article-form p { margin: 0 0 16px; }
+.article-form label { font-size: 14px; color: #4a5e6e; font-weight: bold; margin-bottom: 7px; }
+.article-form input, .article-form select, .article-form textarea { background: white; border-color: #bdcbd5; padding: 9px; }
+.article-form input, .article-form select { height: 42px; }
+.article-form textarea { min-height: 260px; line-height: 1.6; }
+.article-form input:focus, .article-form select:focus, .article-form textarea:focus { outline: 1px solid #647f93; }
+.editor-actions { text-align: right; }
+.editor-actions button { margin: 0; padding: 9px 22px; background: #35485a; border-color: #35485a; color: white; }
+.editor-actions button:hover { background: #263746; }
+button { background: #e8edf1; color: #222; border: 1px solid #aab4bc; padding: 6px 12px; margin: 3px 0; font: inherit; cursor: pointer; }
+button:hover { background: #dbe3e9; }
+.action-form { display: inline-block; }
+.action-form button { font-size: 13px; padding: 4px 7px; }
+.admin-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 15px; padding: 18px 0; border-bottom: 1px solid #dce1e5; }
+.admin-details { flex: 1; min-width: 220px; }
+.admin-heading { margin: 0 0 5px; font-size: 17px; }
+.admin-meta { margin: 0 0 7px; font-size: 13px; color: #777; }
+.article-status { display: inline-block; padding: 2px 7px; background: #edf3ed; color: #486347; font-size: 12px; }
+.article-status.blocked { background: #f8e9e6; color: #963f35; }
+.admin-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; font-size: 13px; }
+.delete-button { color: #963f35; background: white; border-color: #d2b1ab; }
+.pagination { margin-top: 20px; }
+.pagination a, .pagination span { margin-right: 12px; }
+.status { color: #245b2b; background: #e0eedf; padding: 10px; }
+.errors { color: #922b2b; background: #f7e5e5; padding: 10px 30px; }
+footer { color: #666; font-size: 13px; padding: 0 5px; }
+@media (max-width: 600px) {
+    .container { margin: 0; padding: 0; }
+    .site-header { gap: 12px; padding: 12px; }
+    main { padding: 15px; }
+    .editor-top { grid-template-columns: 1fr; gap: 0; }
+    .article-form { padding: 12px; }
+    .article-form textarea { min-height: 220px; }
+}
